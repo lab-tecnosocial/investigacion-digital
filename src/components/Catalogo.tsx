@@ -5,17 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Search } from 'lucide-react'
 import data from "@/data/cursos.json";
-
-interface Course {
-  categoria: string;
-  subcategoria: string;
-  imagen: string;
-  titulo: string;
-  justificacion: string;
-  competencia: string;
-  contenidos: string;
-}
-
+import type { Course } from "@/data/cursosTypes";
 const courses = data as Course[];
 
 // Extract unique categories
