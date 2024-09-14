@@ -1,19 +1,14 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import { HomePageComponent } from "@/components/home-page";
+import Hero from "../components/Hero.astro";
+import { Catalogo } from "@/components/Catalogo";
+import PageLayout from "@/layouts/PageLayout.astro";
 ---
 
-<!doctype html>
-<html lang="es">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <HomePageComponent client:load />
-    <Footer />
-  </body>
-</html>
+<PageLayout titulo="{SITE_TITLE}" descripcion="{SITE_DESCRIPTION}" imagen="">
+  <Header />
+  <Hero />
+  <Catalogo client:load />
+  <Footer />
+</PageLayout>
