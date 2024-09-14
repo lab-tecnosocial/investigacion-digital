@@ -1,0 +1,146 @@
+[
+  {
+    "categoria": "Gestión de proyectos de investigación",
+    "subcategoria": "Gestión",
+    "imagen": "ms-project.jpg",
+    "titulo": "Gestión de proyectos de investigación con MS Project",
+    "justificacion": "Emprender un proyecto de investigación en equipo requiere una coordinación precisa a nivel del alcance del trabajo, los tiempos y los recursos implicados. La aplicación MS Project permite integrar, en una misma base de datos, información sobre estos factores, tanto para la planificación como para el monitoreo, permitiendo incrementar las posibilidades de un proyecto de investigación exitoso.",
+    "competencia": "Organiza el alcance, los tiempos y los recursos de un proyecto de investigación a través de MS Project",
+    "contenidos": "1. Los factores básicos de un proyecto\nAlcance\nTiempo\nRecursos\n2. La estructura desglosada de trabajo (EDT)\nEstimación del alcance\nLos criterios SMART\n3. Diagrama de Gantt\nEstimación de tiempo\nSecuenciación\nRuta crítica\nCompresión\n4. Costos y presupuesto\nEstimación de costos\nPlanilla de recursos\n5. Monitoreo"
+  },
+  {
+    "categoria": "Gestión de proyectos de investigación",
+    "subcategoria": "Colaboración",
+    "imagen": "slack.jpg",
+    "titulo": "Comunicación en equipo con Slack",
+    "justificacion": "Slack es una herramienta de comunicación estructurada. A diferencia de otras apps de mensajería que solo contienen un hilo, mezclando todo tipo de conversaciones, con Slack es posible organizar la conversación de un equipo de trabajo, además de múltiples integraciones con otras apps.",
+    "competencia": "Organiza la comunicación de equipo de forma estructurada mediante Slack",
+    "contenidos": "1. Comunicación organizacional vs. personal\n2. La interfaz general de Slack\n3. Los tres niveles de comunicación\nCanales\nHilos\nMensajes directos\n4. Integraciones con otras apps\n5. Comandos básicos"
+  },
+  {
+    "categoria": "Gestión de información",
+    "subcategoria": "Búsqueda",
+    "imagen": "busqueda.jpeg",
+    "titulo": "Búsqueda de información académica",
+    "justificacion": "Existe mucha información académica en Internet, pero encontrarla muchas veces puede ser un reto debido a su dispersión. Aquí se necesita un conjunto de plataformas y herramientas que permitan encontrar más fácilmente la información académica",
+    "competencia": "Busca información académica, como libros y artículos académicos, a partir de un plan y con el apoyo de diferentes herramientas digitales",
+    "contenidos": "1. El plan de búsqueda\n2. Google Scholar\nOperadores básicos\nOperadores avanzados\n3. Library Genesis\n4. Sci-Hub\n5. Scribd\n6. Repositorios institucionales"
+  },
+  {
+    "categoria": "Gestión de información",
+    "subcategoria": "Gestión de notas",
+    "imagen": "notion.jpeg",
+    "titulo": "Notion para gestión del conocimiento y notas académicas",
+    "justificacion": "La escritura académica requiere un trabajo de documentación y lectura previa, de allí la importancia de tomar notas para la investigación social. Sin embargo, ¿cómo gestionar el conocimiento y organizar las notas que tomamos? Muchas figuras de las ciencias sociales y humanidades, al rededor de esta pregunta, han construido sistemas propios de gestión de conocimiento. Hoy en día, podemos usar herramientas digitales para este propósito, siendo Notion una de las más afamadas en el campo de la toma de notas, debido a que es gratuita, flexible y muy poderosa.",
+    "competencia": "Administra un sistema de notas con Notion",
+    "contenidos": "1. Breve introducción a la gestión del conocimiento\nUn breve recorrido histórico por los sistemas de notas en las humanidades y ciencias sociales\nLa importancia de las notas para las ciencias sociales y humanidades\nHerramientas digitales para la gestión del conocimiento\n2. Primeros pasos en Notion\nPrimeros pasos en Notion\nAbrir una cuenta en Notion\nExploración de la interfaz de Notion. Crear un primer espacio de trabajo.\nComponentes de Notion\n3. Construcción de un sistema de notas para la gestión del conocimiento en Notion\nCreación de un cuaderno de notas\nAspectos básicos para un uso intermedio/avanzado de Notion"
+  },
+  {
+    "categoria": "Gestión de información",
+    "subcategoria": "Gestión bibliográfica",
+    "imagen": "zotero.png",
+    "titulo": "Gestión bibliográfica con Zotero",
+    "justificacion": "La gestión de las referencias y los ítems bibliográficos particularmente en trabajos académicos largos, como tesis y libros, suele ser un reto por la gran cantidad de información que se debe organizar y referenciar. Asimismo los sistemas o estilos de citas suelen variar de institución en institución, lo que provoca que se deba re-formatear las bibliografías finales. Justamente para automatizar estas tareas, existen los gestores bibliográficos, siendo Zotero uno de los gestores más poderosos.",
+    "competencia": "Recopila, organiza, referencia y crea bibliografías automáticamente con Zotero.",
+    "contenidos": "1. Instalación\n2. La interfaz general\n3. Recolección de items\nManual\nMediante el plugin del navegador\nMediante identificador (ISBN, ISSN)\n4. Gestión de archivos\nImportados\nEnlazados\n5. Organización\nColecciones\nEtiquetas\nGrupos\n6. Gestión de estilos de citas\n7. Creación de bibliografías en procesadores de texto"
+  },
+  {
+    "categoria": "Recolección de datos",
+    "subcategoria": "Datos cuantitativos",
+    "imagen": "webscraper.jpeg",
+    "titulo": "Scraping con webscraper.io",
+    "justificacion": "Existen datos en sitios web públicos que pueden servir para realizar estudios. En vez de copiarlos a manos, que es una tarea tediosa, es posible utilizar el scraping para recolectar esa información de forma estructurada en una tabla. Webscraper.io permite realizar un scraping mediante una interfaz visual, desde la comodidad del navegador y sin código de programación.",
+    "competencia": "Recolecta datos de sitios web públicos mediante webscraper.io",
+    "contenidos": "1. Crear mapa de sitio\n2. Selectores\nTexto\nLink\nImagen\nTabla\nHTML\nDe grupos\nClick\nPaginación\n3. Exportación de datos\n4. Prácticas en diversos sitios"
+  },
+  {
+    "categoria": "Recolección de datos",
+    "subcategoria": "Datos cuantitativos",
+    "imagen": "kobo.png",
+    "titulo": "Encuestas georeferenciadas con KoboToolBox",
+    "justificacion": "Las encuestas son importantes instrumentos para recolectar información cuantitativa que cubre una población numerosa dispersa en un territorio amplio. Su gestión, a nivel de equipo de encuestadores, encuestados y monitoreo territorial suelen comportar una gran dificultad.Con KoboToolBox es posible realizar operativos de encuestas de forma más integrada, utilizando un mismo servidor e integrando la recolección de datos mediante tres medios: celular offline, web y papel, permitiendo la captura de diferente información multimedia y georeferenciada.",
+    "competencia": "Diseña e implementa un operativo de recolección de información cuantitativa mediante KoboToolBox.",
+    "contenidos": "1. Creación de formularios\n2. Tipos de items\nMetadatos\nTradicionales\nMultimedia\nGeoreferenciación\n3. Lógica de agrupación\n4. Lógica de escape\n5. Lógica de validación\n6. Despliegue\n7. Aplicación en celular\n8. Administración de datos en el servidor\n9. Exportación de datos"
+  },
+  {
+    "categoria": "Recolección de datos",
+    "subcategoria": "Datos cualitativos",
+    "imagen": "zoho.png",
+    "titulo": "Diario digital de campo con Zoho Notebook",
+    "justificacion": "La exploración del Internet, la Web, las pantallas y las aplicaciones puede realizarse no solo con métodos cuantitativos, sino también con cualitativos, yendo del Big Data al Small Data. Un diario digital de campo permite capturar información cualitativa, multimedia y al mismo tiempo preguntas, reflexiones y análisis en formato narrativo. Una herramienta para operativizar esto es Zoho Notebook.",
+    "competencia": "Compila notas de campo multimedia a través de Zoho Notebook",
+    "contenidos": "1. El diario de campo tradicional\n2. El diario digital de campo\n3. Creación de cuadernos\n4. Tipos de notas\nTexto\nAudio\nChecklist\nFotografía\nArchivo\nBoceto\n5. Trabajo en la Web\n6. Trabajo con el celular"
+  },
+  {
+    "categoria": "Análisis de datos",
+    "subcategoria": "Análisis cuantitativo",
+    "imagen": "arcgis.jpg",
+    "titulo": "Edición y generación de mapas temáticos con ArcGIS",
+    "justificacion": "Una de los software más utilizados para el análisis de datos espaciales es ArcGIS. Este programa proporciona una robusta caja de herramientas y funciones que permiten interpretar la información proporcionada en soportes cartográficos, ya sean físicos o digitales. Este curso introductorio presenta el programa a través de ejercicios con datos espaciales, incluyendo la obtención de datos, el procesamiento y análisis inicial de los mismos.",
+    "competencia": "Desarrolla análisis iniciales sobre datos espaciales por medio del programa ArcGIS",
+    "contenidos": "1. Introducción a ArcGIS\nInterfaz\nHerramientas\nTipos de datos\n2. Plataformas e imágenes satelitales\nRecursos cartográficos\nSensores remotos\nSensores pasivos\nSensores activos\n3. Procesos iniciales\nGeorreferenciación de imágenes\nTablas de atributos\n4. Análisis de datos\nAnálisis exploratorio de datos\nAnálisis espacial vector\nAnálisis espacial ráster"
+  },
+  {
+    "categoria": "Análisis de datos",
+    "subcategoria": "Análisis cuantitativo",
+    "imagen": "gephi.jpeg",
+    "titulo": "Análisis de redes con Gephi",
+    "justificacion": "El análisis de redes permite visualizar y analizar la estructura de las relaciones en una organización, grupo o fenómeno social. La herramienta digital de Gephi ayuda a la exploración de redes y su visualización de manera sencilla y con muchas opciones para la visualización de una red.",
+    "competencia": "Genera una visualización de red comprensible utilizando Gephi",
+    "contenidos": "1. Teoría de grafos elemental\nVértices y aristas\nTipos de grafos\nAtributos\nMatrices y listas\n2. La interfaz de Gephi\n3. Laboratorio de datos\n4. Medidas de centralidad\n5. Modularidad\n6. Visualización y exportación"
+  },
+  {
+    "categoria": "Análisis de datos",
+    "subcategoria": "Análisis cuantitativo",
+    "imagen": "voyant.png",
+    "titulo": "Análisis de contenido con VoyantTools",
+    "justificacion": "Cuando nos encontramos con un corpus de texto enorme, se hace muy complicado leer todo el material a profundidad, como es en el caso de investigaciones con material histórico que cubre décadas o datos textuales de redes sociales. En ese caso el análisis de contenido es útil. Aquí Voyant Tools con su interfaz web permite un análisis de contenido asequible",
+    "competencia": "Realiza análisis de contenido de corpus textuales extensos con Voyant Tools.",
+    "contenidos": "1. Creación de un corpus de texto\n2. Exploración del corpus\nFrecuencias (Cirrus)\nSumarios\nBúsqueda\nTablas\nBurbujas\nColocaciones\nContextos\n3. Análisis\nCorrelaciones\nDiagrama de dispersión\nÁrboles de palabras\nTópicos"
+  },
+  {
+    "categoria": "Análisis de datos",
+    "subcategoria": "Análisis cuantitativo",
+    "imagen": "rstudio.png",
+    "titulo": "Programación para el análisis de datos con R",
+    "justificacion": "El análisis exploratorio es el primer paso para comprender las tendencias generales de una tabla de datos estructurada. Permite descubrir posibles patrones de forma visual y análitica. Este proceso se puede automatizar con R, que combina la programación y la estadística.",
+    "competencia": "Realiza un análisis exploratorio de datos con R.",
+    "contenidos": "El IDE: RStudio\nTipos de datos\nNuméricos\nCaracteres\nLógicos\nFecha\nVariables\nFunciones\nEstructuras de datos\nVectores y matrices\nFactores\nTrama de datos\nListas\nAnálisis exploratorio\nEstadísticos descriptivos\nVisualizaciones descriptivas\nReproducibilidad"
+  },
+  {
+    "categoria": "Análisis de datos",
+    "subcategoria": "Análisis cualitativo",
+    "imagen": "atlasti9.jpg",
+    "titulo": "Procesamiento de datos cualitativos con ATLAS.ti",
+    "justificacion": "En nuestro medio el procesamiento de información cualitativa aún se realiza de forma intuitiva y artesanal. Atlas.ti permite el procesamiento digital de datos cualitativos, con todas las ventajas que una herramienta digital ofrece. El curso además de mostrar el manejo del software, expondrá principios teóricos y técnicas variadas del análisis de datos cualitativos.",
+    "competencia": "Procesar una variedad de datos cualitativos (textos, imágenes, videos) con el software Atlas.ti, teniendo en cuenta principios y técnicas cualitativas",
+    "contenidos": "1. Introducción al análisis cualitativo\nLo particular del análisis cualitativo\nPrincipios de análisis cualitativo\n2. La codificación y los componentes del análisis de datos\nCodificación y categorización\nComponentes del análisis de datos\nEnfoques de codificación\n3. Técnicas de codificación de primer ciclo y procedimientos básicos\nTécnicas exploratorias\nTécnicas gramaticales\nTécnicas procedimentales\nTécnicas elementales\nTécnicas afectivas\nTécnicas literarias\n4. Técnicas de codificación de segundo ciclo y procedimientos intermedios\nCodificación enfocada\nCodificación de patrones\nCodificación axial\nCodificación selectiva o teórica\n5. Visualización y recuperación de datos\nConsultas\nMatrices\nVistas de red"
+  },
+  {
+    "categoria": "Redacción académica",
+    "subcategoria": "",
+    "imagen": "zoho.png",
+    "titulo": "Redacción de textos académicos con Scrivener",
+    "justificacion": "Los texto académicos largos suelen ser complicados de organizar en un programa lineal como Microsoft Word. Existen alternativas que permiten organizar los textos en unidades más elementales para luego combinarlas, como también integrar la escritura con las notas o fichas de investigación. Scrivener es uno de esos programas.",
+    "competencia": "Redacta textos académicos largos de forma organizada e interconectada mediante Scrivener.",
+    "contenidos": "1. Interfaz general\n2. El cuaderno\n3. Editor\n4. Inspector\nSinopsis y notas\nEtiquetas y estatus\nMarcadores\nInstantáneas\n5. Metadatos\n6. Compilación"
+  },
+  {
+    "categoria": "Comunicación científica",
+    "subcategoria": "Redes académicas",
+    "imagen": "researchgate.png",
+    "titulo": "Perfiles académicos en ORCID, ResearchGate y Academia",
+    "justificacion": "La comunicación académica implica la visibilidad, difusión y discusión de los trabajos académicos. Con los medios digitales de hoy como ORCID, Academia.edu y ResearchGate, es posible lograr mayor visibilidad y comunicación.",
+    "competencia": "Difunde sus trabajos académicos a través de ORCID, Academia.edu y ResearchGate",
+    "contenidos": "1. Identificadores académicos\n2. Perfiles académicos\n3. ORCID\nCampos\nUso de API\n4. Acadedemia.edu\n5. ResearchGate"
+  },
+  {
+    "categoria": "Comunicación científica",
+    "subcategoria": "Visualización de datos",
+    "imagen": "flourish.jpeg",
+    "titulo": "Visualización interactiva de datos con Flourish",
+    "justificacion": "Parte de la comunicación académica implica la visualización de datos. Con la llegada de la Web ahora es posible compartir más fácilmente las visualizaciones y hacerlas interactivas. Flourish es una herramienta de visualización de datos.",
+    "competencia": "Visualiza datos de forma interactiva con Flourish",
+    "contenidos": "1. Preparación de datos\n2. Tipos de visualizaciones\nBásicos\nDispersión\nJerarquías\nMapas\nTarjetas\nCalor\nRadares\nSankey\nTablas\nRedes\n3. Parámetros\n4. Exportación"
+  }
+]
