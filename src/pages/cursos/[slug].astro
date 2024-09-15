@@ -1,0 +1,85 @@
+---
+import PageLayout from "@/layouts/PageLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import data from "@/data/cursos.json";
+import type { Course } from "@/data/cursosTypes";
+import TabsComponent from "@/components/TabsComponent";
+
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import { ArrowLeft, Calendar, Clock, Users } from "lucide-react";
+
+export async function getStaticPaths() {
+  const cursos: Course[] = data;
+  return cursos.map((curso) => {
+    return {
+      params: {
+        slug: curso.slug,
+      },
+      props: {
+        curso: curso,
+      },
+    };
+  });
+}
+
+const { curso } = Astro.props as { curso: Course };
+---
+
+<PageLayout
+  titulo={curso.titulo}
+  descripcion={curso.competencia}
+  imagen={curso.imagen}
+>
+  <Header />
+  <div class="container mx-auto py-8">
+    <Button variant="ghost" className="mb-4" asChild>
+      <a href="/">
+        <ArrowLeft className="mr-2 h-4 w-4" /> Volver al catalogo
+      </a>
+    </Button>
+
+    <Card className="mb-8" client:load>
+      <CardHeader>
+        <img
+          src={"/images/" + curso.imagen}
+          alt={curso.titulo}
+          class="w-full h-64 object-cover rounded-t-lg"
+        />
+        <CardTitle className="text-3xl mt-4">{curso.titulo}</CardTitle>
+        <CardDescription>{curso.competencia}</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <div class="flex flex-wrap gap-4 mb-4">
+          <Badge variant="secondary" className="flex items-center">
+            <Clock className="mr-1 h-4 w-4" />
+            {}
+          </Badge>
+          <Badge variant="secondary" className="flex items-center">
+            <Calendar className="mr-1 h-4 w-4" />
+            {}
+          </Badge>
+          <Badge variant="secondary" className="flex items-center">
+            <Users className="mr-1 h-4 w-4" />
+            {} enrolled
+          </Badge>
+        </div>
+        <TabsComponent curso={curso} client:load />
+      </CardContent>
+      <CardFooter>
+        <Button className="w-full"> Inscribirme </Button>
+      </CardFooter>
+    </Card>
+  </div>
+  <Footer />
+</PageLayout>

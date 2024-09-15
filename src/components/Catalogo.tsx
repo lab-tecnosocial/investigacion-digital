@@ -60,7 +60,9 @@ export function Catalogo() {
                 <p className="text-sm text-gray-500">{course.categoria}</p>
               </CardContent>
               <CardFooter>
-                <Button className="w-full">Ver más</Button>
+                <Button className="w-full" asChild>
+                  <a href={`/cursos/${course.slug}`}>Ver más</a>
+                </Button>
               </CardFooter>
             </Card>
           ))}
