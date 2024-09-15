@@ -5,10 +5,9 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Search } from 'lucide-react'
 import data from "@/data/cursos.json";
-import type { Course } from "@/data/cursosTypes";
-const courses = data as Course[];
+import type { Curso as TCurso } from "@/data/cursosTypes";
+const courses = data as TCurso[];
 
-// Extract unique categories
 const categories = ["Todos", ...new Set(courses.map(course => course.categoria))]
 
 export function Catalogo() {
