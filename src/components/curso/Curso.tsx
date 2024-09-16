@@ -11,7 +11,7 @@ export default function Curso({ curso }: { curso: TCurso }) {
   return (
     <main className="container mx-auto py-8 max-w-4xl">
       <Button variant="ghost" className="mb-4" asChild >
-        <a href="/">
+        <a href="/catalogo">
           <ArrowLeft className="mr-2 h-4 w-4" /> Vuelve al catalogo
         </a>
       </Button>

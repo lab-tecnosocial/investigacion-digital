@@ -2,9 +2,34 @@
 import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
 ---
 
-<section class="bg-gray-100 py-20">
+<section class="bg-gray-100 py-20 sm:py-40" id="hero">
     <div class="container mx-auto px-4 text-center">
         <h1 class="text-4xl font-bold mb-4">{SITE_TITLE}</h1>
         <p class="text-xl mb-8">{SITE_DESCRIPTION}</p>
     </div>
 </section>
+
+<script
+    is:inline
+    src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+></script>
+<script
+    is:inline
+    src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"
+></script>
+
+<script>
+    VANTA.GLOBE({
+        el: "#hero",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 0.5,
+        color: 0x5301d7,
+        color2: 0x00dfa0,
+        backgroundColor: 0xffffff,
+    });
+</script>

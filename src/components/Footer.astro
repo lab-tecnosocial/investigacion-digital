@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
   <div class="container mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div></div>
-      <div>
+      <!-- <div>
         <h3 class="text-lg font-semibold mb-4">Lista de correo</h3>
         <p class="text-sm mb-2">
           Suscribite a nuestra lista de correo para recibir las últimas noticias
@@ -22,30 +22,21 @@ import { Input } from "@/components/ui/input";
           <Button type="submit" className="rounded-l-none">Subscribe</Button>
         </form>
       </div>
-    </div>
-    <div class="mt-8 pt-4 border-t border-gray-700 text-center text-sm">
-      © {new Date().getFullYear()} Investigación Digital
+    </div> -->
+      <div class="mt-8 pt-4 border-t border-gray-700 text-center text-sm">
+        Administrado por el <a
+          hover:text-green-100
+          href="https://labtecnosocial.org/">Lab TecnoSocial</a
+        >, {new Date().getFullYear()}
+      </div>
     </div>
   </div>
+  <style>
+    footer {
+      padding: 2em 1em 6em 1em;
+      background: linear-gradient(var(--gray-gradient)) no-repeat;
+      color: rgb(var(--gray));
+      text-align: center;
+    }
+  </style>
 </footer>
-<style>
-  footer {
-    padding: 2em 1em 6em 1em;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    color: rgb(var(--gray));
-    text-align: center;
-  }
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
-  }
-  .social-links a {
-    text-decoration: none;
-    color: rgb(var(--gray));
-  }
-  .social-links a:hover {
-    color: rgb(var(--gray-dark));
-  }
-</style>
