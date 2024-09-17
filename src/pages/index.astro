@@ -7,7 +7,11 @@ import PageLayout from "@/layouts/PageLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
 ---
 
-<PageLayout titulo={SITE_TITLE} descripcion={SITE_DESCRIPTION} imagen="">
+<PageLayout
+  titulo={SITE_TITLE}
+  descripcion={SITE_DESCRIPTION}
+  imagen="/images/preview.png"
+>
   <Header />
   <Hero />
   <Catalogo client:load />

@@ -26,7 +26,7 @@ const { curso } = Astro.props as { curso: TCurso };
 <PageLayout
   titulo={curso.titulo}
   descripcion={curso.competencia}
-  imagen={curso.imagen}
+  imagen={"/images/" + curso.imagen}
 >
   <Header />
   <Curso curso={curso} client:load />
