@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Search } from 'lucide-react'
@@ -22,14 +23,14 @@ export function Catalogo() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Nuestros cursos</h2>
+        <h2 className="font-title text-3xl font-bold mb-8 text-center">Nuestros cursos</h2>
         {/* Filter and Search */}
-        <div className="flex flex-col sm:flex-row justify-between items-center mb-8 space-y-4 sm:space-y-0">
+        <div className="flex flex-col justify-between items-center mb-8 space-y-4">
           <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-            <SelectTrigger className="w-full sm:w-[180px]">
-              <SelectValue placeholder="Select Category" />
+            <SelectTrigger className="font-body w-full sm:w-[300px]">
+              <SelectValue placeholder="Seleccionar categoría" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="font-body">
               {categories.map(category => (
                 <SelectItem key={category} value={category}>{category}</SelectItem>
               ))}
@@ -42,7 +43,7 @@ export function Catalogo() {
               placeholder="Buscar cursos..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 w-full sm:w-[300px]"
+              className="font-body pl-10 w-full sm:w-[300px]"
             />
           </div>
         </div>
@@ -50,16 +51,16 @@ export function Catalogo() {
         {/* Course Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredCourses.map((course, index) => (
-            <Card key={index}>
+            <Card key={index} className="drop-shadow-sm hover:drop-shadow-lg">
               <CardHeader>
                 <img src={`/images/${course.imagen}`} alt={course.titulo} className="w-full h-48 object-cover rounded-t-lg" />
               </CardHeader>
               <CardContent>
-                <CardTitle>{course.titulo}</CardTitle>
-                <p className="text-sm text-gray-500">{course.categoria}</p>
+                <CardTitle className="font-title">{course.titulo}</CardTitle>
+                <Badge variant="outline" className="text-primary-normal font-body font-thin">{course.categoria}</Badge>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" asChild>
+                <Button className="w-40 mx-auto" asChild>
                   <a href={`/cursos/${course.slug}`}>Ver más</a>
                 </Button>
               </CardFooter>

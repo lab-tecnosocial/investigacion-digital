@@ -15,8 +15,12 @@ export default {
 					normal: '#5400d8',
 					dark: '#4602b0',
 				},
+			},
+			fontFamily: {
+				title: ['Roboto Mono', 'sans-serif'],
+				body: ['Inria Sans', 'sans-serif'],
 			}
-		}
+		},
 	},
 	plugins: [require("tailwindcss-animate")],
 }
