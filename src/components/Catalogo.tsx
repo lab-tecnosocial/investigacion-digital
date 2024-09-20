@@ -60,7 +60,7 @@ export function Catalogo() {
                 <div className="flex justify-center gap-1 mt-1">
                   {
                     course.etiquetas.map((etiqueta, index) => (
-                      <Badge key={index} variant="outline" className="text-primary-normal font-body font-thin">{etiqueta}</Badge>
+                      <Badge key={index} variant="outline" className="text-primary-normal text-center font-body font-thin">{etiqueta}</Badge>
                     ))
                   }
                 </div>
