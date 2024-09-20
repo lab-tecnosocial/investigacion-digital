@@ -1,7 +1,63 @@
 [
   {
-    "categoria": "Gestión de proyectos de investigación",
-    "subcategoria": "Colaboración",
+    "categoria": "Gestión de proyectos",
+    "etiquetas": [
+      "Gestión de proyectos"
+    ],
+    "imagen": "ms-project.jpg",
+    "slug": "gestion-ms-project",
+    "titulo": "Gestión de proyectos de investigación con MS Project",
+    "justificacion": "Emprender un proyecto de investigación en equipo requiere una coordinación precisa a nivel del alcance del trabajo, los tiempos y los recursos implicados. La aplicación MS Project permite integrar, en una misma base de datos, información sobre estos factores, tanto para la planificación como para el monitoreo, permitiendo incrementar las posibilidades de un proyecto de investigación exitoso.",
+    "competencia": "Organiza el alcance, los tiempos y los recursos de un proyecto de investigación a través de MS Project",
+    "contenidos": [
+      {
+        "titulo": "Los factores básicos de un proyecto",
+        "subtitulos": [
+          "Alcance",
+          "Tiempo",
+          "Recursos"
+        ]
+      },
+      {
+        "titulo": "La estructura desglosada de trabajo (EDT)",
+        "subtitulos": [
+          "Estimación del alcance",
+          "Los criterios SMART"
+        ]
+      },
+      {
+        "titulo": "Diagrama de Gantt",
+        "subtitulos": [
+          "Estimación de tiempo",
+          "Secuenciación",
+          "Ruta crítica",
+          "Compresión"
+        ]
+      },
+      {
+        "titulo": "Costos y presupuesto",
+        "subtitulos": [
+          "Estimación de costos",
+          "Planilla de recursos"
+        ]
+      },
+      {
+        "titulo": "Monitoreo"
+      }
+    ],
+    "docentes": [
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      }
+    ]
+  },
+  {
+    "categoria": "Gestión de proyectos",
+    "etiquetas": [
+      "Gestión de proyectos"
+    ],
     "imagen": "slack.jpg",
     "slug": "comunicacion-slack",
     "titulo": "Comunicación en equipo con Slack",
@@ -29,15 +85,19 @@
         "titulo": "Comandos básicos"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Javier Olmos",
+        "foto": "javier-olmos.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Gestión de información",
-    "subcategoria": "Búsqueda",
+    "etiquetas": [
+      "Gestión de información"
+    ],
     "imagen": "busqueda.jpeg",
     "slug": "busqueda-informacion",
     "titulo": "Búsqueda de información académica",
@@ -67,15 +127,20 @@
         "titulo": "Repositorios institucionales"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Patricia Delgadillo",
+        "foto": "patricia-delgadillo.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Gestión de información",
-    "subcategoria": "Gestión de notas",
+    "etiquetas": [
+      "Gestión de información",
+      "Notas académicas"
+    ],
     "imagen": "notion.jpeg",
     "slug": "gestion-notion",
     "titulo": "Notion para gestión del conocimiento y notas académicas",
@@ -107,15 +172,25 @@
         ]
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Javier Olmos",
+        "foto": "javier-olmos.webp",
+        "bio": ""
+      },
+      {
+        "nombre": "Valeria Peredo",
+        "foto": "valeria-peredo.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Gestión de información",
-    "subcategoria": "Gestión bibliográfica",
+    "etiquetas": [
+      "Gestión de información",
+      "Bibliografía"
+    ],
     "imagen": "zotero.png",
     "slug": "gestion-zotero",
     "titulo": "Gestión bibliográfica con Zotero",
@@ -158,15 +233,25 @@
         "titulo": "Creación de bibliografías en procesadores de texto"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Patricia Delgadillo",
+        "foto": "patricia-delgadillo.webp",
+        "bio": ""
+      },
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Recolección de datos",
-    "subcategoria": "Datos cuantitativos",
+    "etiquetas": [
+      "Recolección de datos",
+      "Datos cuantitativos"
+    ],
     "imagen": "webscraper.jpeg",
     "slug": "scraping-webscraper",
     "titulo": "Scraping con webscraper.io",
@@ -196,15 +281,20 @@
         "titulo": "Prácticas en diversos sitios"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Recolección de datos",
-    "subcategoria": "Datos cuantitativos",
+    "etiquetas": [
+      "Recolección de datos",
+      "Datos cuantitativos"
+    ],
     "imagen": "kobo.png",
     "slug": "encuestas-kobo",
     "titulo": "Encuestas georeferenciadas con KoboToolBox",
@@ -245,15 +335,25 @@
         "titulo": "Exportación de datos"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Valeria Peredo",
+        "foto": "valeria-peredo.webp",
+        "bio": ""
+      },
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Recolección de datos",
-    "subcategoria": "Datos cualitativos",
+    "etiquetas": [
+      "Recolección de datos",
+      "Datos cualitativos"
+    ],
     "imagen": "zoho.png",
     "slug": "diario-zoho",
     "titulo": "Diario digital de campo con Zoho Notebook",
@@ -287,15 +387,20 @@
         "titulo": "Trabajo con el celular"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Análisis de datos",
-    "subcategoria": "Análisis cuantitativo",
+    "etiquetas": [
+      "Análisis de datos",
+      "Datos espaciales"
+    ],
     "imagen": "arcgis.jpg",
     "slug": "edicion-arcgis",
     "titulo": "Edición y generación de mapas temáticos con ArcGIS",
@@ -335,15 +440,20 @@
         ]
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Abigail Roque",
+        "foto": "abigail-roque.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Análisis de datos",
-    "subcategoria": "Análisis cuantitativo",
+    "etiquetas": [
+      "Análisis de datos",
+      "Datos cuantitativos"
+    ],
     "imagen": "gephi.jpeg",
     "slug": "redes-gephi",
     "titulo": "Análisis de redes con Gephi",
@@ -375,15 +485,20 @@
         "titulo": "Visualización y exportación"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Análisis de datos",
-    "subcategoria": "Análisis cuantitativo",
+    "etiquetas": [
+      "Análisis de datos",
+      "Datos cuantitativos"
+    ],
     "imagen": "voyant.png",
     "slug": "contenido-voyant",
     "titulo": "Análisis de contenido con VoyantTools",
@@ -415,15 +530,25 @@
         ]
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Valeria Peredo",
+        "foto": "valeria-peredo.webp",
+        "bio": ""
+      },
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Análisis de datos",
-    "subcategoria": "Análisis cuantitativo",
+    "etiquetas": [
+      "Análisis de datos",
+      "Datos cuantitativos"
+    ],
     "imagen": "rstudio.png",
     "slug": "programacion-r",
     "titulo": "Programación para el análisis de datos con R",
@@ -468,15 +593,20 @@
         "titulo": "Reproducibilidad"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Análisis de datos",
-    "subcategoria": "Análisis cualitativo",
+    "etiquetas": [
+      "Análisis de datos",
+      "Datos cualitativos"
+    ],
     "imagen": "atlasti9.jpg",
     "slug": "analisis-cualitativo-atlasti",
     "titulo": "Procesamiento de datos cualitativos con ATLAS.ti",
@@ -527,15 +657,24 @@
         ]
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      },
+      {
+        "nombre": "Abigail Roque",
+        "foto": "abigail-roque.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Redacción académica",
-    "subcategoria": "",
+    "etiquetas": [
+      "Redacción académica"
+    ],
     "imagen": "scrivener.jpg",
     "slug": "redaccion-scrivener",
     "titulo": "Redacción de textos académicos con Scrivener",
@@ -567,15 +706,20 @@
         "titulo": "Compilación"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Alex Ojeda Copa",
+        "foto": "alex-ojeda.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Comunicación científica",
-    "subcategoria": "Redes académicas",
+    "etiquetas": [
+      "Comunicación científica",
+      "Redes académicas"
+    ],
     "imagen": "researchgate.png",
     "slug": "perfiles-orcid",
     "titulo": "Perfiles académicos en ORCID, ResearchGate y Academia",
@@ -605,15 +749,20 @@
         "titulo": "ResearchGate"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Javier Olmos",
+        "foto": "javier-olmos.webp",
+        "bio": ""
+      }
+    ]
   },
   {
     "categoria": "Comunicación científica",
-    "subcategoria": "Visualización de datos",
+    "etiquetas": [
+      "Comunicación científica",
+      "Visualización de datos"
+    ],
     "imagen": "flourish.jpeg",
     "slug": "visualizacion-flourish",
     "titulo": "Visualización interactiva de datos con Flourish",
@@ -645,10 +794,12 @@
         "titulo": "Exportación"
       }
     ],
-    "docente": {
-      "nombre": "Juan Pérez",
-      "foto": "foto.webp",
-      "bio": "Ingeniero de sistemas con 10 años de experiencia en la gestión de proyectos de tecnología. Ha trabajado en empresas de telecomunicaciones y en el sector público. Actualmente es consultor independiente en gestión de proyectos."
-    }
+    "docentes": [
+      {
+        "nombre": "Valeria Peredo",
+        "foto": "valeria-peredo.webp",
+        "bio": ""
+      }
+    ]
   }
 ]

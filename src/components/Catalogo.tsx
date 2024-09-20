@@ -9,14 +9,14 @@ import data from "@/data/cursos.json";
 import type { Curso as TCurso } from "@/data/cursosTypes";
 const courses = data as TCurso[];
 
-const categories = ["Todos", ...new Set(courses.map(course => course.categoria))]
+const etiquetas = ["Todos", ...new Set(courses.flatMap(course => course.etiquetas))]
 
 export function Catalogo() {
-  const [selectedCategory, setSelectedCategory] = useState("Todos")
+  const [selectedEtiqueta, setSelectedEtiqueta] = useState("Todos")
   const [searchTerm, setSearchTerm] = useState("")
 
   const filteredCourses = courses.filter(course =>
-    (selectedCategory === "Todos" || course.categoria === selectedCategory) &&
+    (selectedEtiqueta === "Todos" || course.etiquetas.includes(selectedEtiqueta)) &&
     course.titulo.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
@@ -26,13 +26,13 @@ export function Catalogo() {
         <h2 className="font-title text-3xl font-bold mb-8 text-center">Nuestros cursos</h2>
         {/* Filter and Search */}
         <div className="flex flex-col justify-between items-center mb-8 space-y-4">
-          <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+          <Select value={selectedEtiqueta} onValueChange={setSelectedEtiqueta}>
             <SelectTrigger className="font-body w-full sm:w-[300px]">
-              <SelectValue placeholder="Seleccionar categoría" />
+              <SelectValue placeholder="Seleccionar etiqueta" />
             </SelectTrigger>
             <SelectContent className="font-body">
-              {categories.map(category => (
-                <SelectItem key={category} value={category}>{category}</SelectItem>
+              {etiquetas.map(etiqueta => (
+                <SelectItem key={etiqueta} value={etiqueta}>{etiqueta}</SelectItem>
               ))}
             </SelectContent>
           </Select>
@@ -57,7 +57,13 @@ export function Catalogo() {
               </CardHeader>
               <CardContent>
                 <CardTitle className="font-title">{course.titulo}</CardTitle>
-                <Badge variant="outline" className="text-primary-normal font-body font-thin">{course.categoria}</Badge>
+                <div className="flex justify-center gap-1 mt-1">
+                  {
+                    course.etiquetas.map((etiqueta, index) => (
+                      <Badge key={index} variant="outline" className="text-primary-normal font-body font-thin">{etiqueta}</Badge>
+                    ))
+                  }
+                </div>
               </CardContent>
               <CardFooter>
                 <Button className="w-40 mx-auto" asChild>

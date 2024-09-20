@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, Calendar, Clock, Users, LibraryBig } from 'lucide-react'
+import Docente from './Docente'
 
 import type { Curso as TCurso } from '@/data/cursosTypes';
 
@@ -31,7 +31,7 @@ export default function Curso({ curso }: { curso: TCurso }) {
             <Tabs defaultValue="curriculum" >
               <TabsList className="flex justify-center">
                 <TabsTrigger value="curriculum">Contenido</TabsTrigger>
-                <TabsTrigger value="instructor">Docente</TabsTrigger>
+                <TabsTrigger value="instructor">Docentes</TabsTrigger>
               </TabsList>
               <TabsContent value="curriculum">
                 <ol className="list-decimal pl-5 space-y-2">
@@ -50,15 +50,11 @@ export default function Curso({ curso }: { curso: TCurso }) {
                 </ol>
               </TabsContent>
               <TabsContent value="instructor">
-                <div className="flex items-center space-x-4 mb-4">
-                  <Avatar>
-                    <AvatarImage src={'/images/' + curso.docente.foto} alt={curso.docente.nombre} />
-                  </Avatar>
-                  <div>
-                    <h3 className="font-semibold">{curso.docente.nombre}</h3>
-                    <p className="text-sm text-gray-500">{curso.docente.bio}</p>
-                  </div>
-                </div>
+                {
+                  curso.docentes.map((docente, index) => (
+                    <Docente key={index} nombre={docente.nombre} foto={docente.foto} bio={docente.bio} />
+                  ))
+                }
               </TabsContent>
             </Tabs>
           </CardContent>

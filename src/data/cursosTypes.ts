@@ -11,14 +11,14 @@ type Docente = {
 
 type Curso = {
   categoria: string;
-  subcategoria: string;
+  etiquetas: string[];
   imagen: string;
   slug: string;
   titulo: string;
   justificacion: string;
   competencia: string;
   contenidos: Contenido[];
-  docente: Docente;
+  docentes: Docente[];
 };
 
 export type { Curso };
