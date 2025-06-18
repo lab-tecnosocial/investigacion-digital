@@ -59,9 +59,9 @@ export default function Curso({ curso }: { curso: TCurso }) {
             </Tabs>
           </CardContent>
           <CardFooter>
-            <Button className="w-40 mx-auto p-6">
+            {/* <Button className="w-40 mx-auto p-6">
               Inscribirse
-            </Button>
+            </Button> */}
           </CardFooter>
         </Card>
       </div>

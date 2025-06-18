@@ -452,6 +452,69 @@
     "categoria": "Análisis de datos",
     "etiquetas": [
       "Análisis de datos",
+      "Datos espaciales"
+    ],
+    "imagen": "qgis.jpg",
+    "slug": "mapas-qgis",
+    "titulo": "Mapas temáticos con QGIS",
+    "justificacion": "El uso de Sistemas de Información Geográfica en ciencias sociales es fundamental para comprender diversos fenómenos ligados al espacio y al territorio. Este curso introductorio muestra el proceso de edición de datos geográficos a través de ejercicios manuales y automatizados, incluyendo la obtención de datos, el procesamiento y análisis inicial de los mismos. Ello, mediante el software abierto QGIS, que proporciona una robusta caja de herramientas y funciones que permiten recopilar, organizar, administrar, analizar, compartir datos geográficos para el análisis espacial.",
+    "competencia": "Desarrolla análisis básicos sobre datos geográficos a través del programa QGIS.",
+    "contenidos": [
+      {
+        "titulo": "Introducción a los Sistemas de Información Geográfica ",
+        "subtitulos": [
+          "Conceptos de SIG",
+          "Importancia en las ciencias sociales",
+          "Datos espaciales"
+        ]
+      },
+      {
+        "titulo": "Conociendo QGIS y creando datos propios",
+        "subtitulos": [
+          "Interfaz de QGIS",
+          "Organización de proyects",
+          "Manejo de capas"
+        ]
+      },
+      {
+        "titulo": "Importación de datos",
+        "subtitulos": [
+          "Fuentes de datos abiertos",
+          "Importación",
+          "Manejo de estilos de capa"
+        ]
+      },
+      {
+        "titulo": "Geoprocesos comunes",
+        "subtitulos": [
+          "Edición de tablas de datos",
+          "Reproyecciones",
+          "Cortes",
+          "Intersecciones",
+          "Buffers",
+          "Joins"
+        ]
+      },
+      {
+        "titulo": "Diseño y composición de mapas",
+        "subtitulos": [
+          "Herramientas de composición",
+          "Mejores prácticas"
+        ]
+      }
+    ],
+    "docentes": [
+      {
+        "nombre": "Valeria Peredo",
+        "foto": "valeria-peredo.webp",
+        "bio": ""
+      }
+    ]
+  },
+  {
+    "categoria": "Análisis de datos",
+    "etiquetas": [
+      "Análisis de datos",
       "Datos cuantitativos"
     ],
     "imagen": "gephi.jpeg",
