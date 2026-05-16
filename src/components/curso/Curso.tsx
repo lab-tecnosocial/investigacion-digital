@@ -1,13 +1,27 @@
+import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
-import { ArrowLeft, Calendar, Clock, Users, LibraryBig } from 'lucide-react'
+import { Calendar, Clock, Users, LibraryBig } from 'lucide-react'
 import Docente from './Docente'
+import InscripcionForm from './InscripcionForm'
 
 import type { Curso as TCurso } from '@/data/cursosTypes';
 
+// Custom PocketBase route that returns only the count — List rule stays locked.
+// See docs/pb_hooks/count.pb.js for the server-side code.
+const PB_URL = 'https://pb.labtecnosocial.cloud'
+
 export default function Curso({ curso }: { curso: TCurso }) {
+  const [inscritos, setInscritos] = useState(0)
+
+  useEffect(() => {
+    fetch(`${PB_URL}/api/custom/count?slug=${encodeURIComponent(curso.slug)}`)
+      .then(r => r.json())
+      .then(data => { if (typeof data.count === 'number') setInscritos(data.count) })
+      .catch(() => {})
+  }, [curso.slug])
 
   return (
     <main>
@@ -25,13 +39,14 @@ export default function Curso({ curso }: { curso: TCurso }) {
                 <Calendar className="mr-1 h-4 w-4" /> { }
               </Badge>
               <Badge variant="secondary" className="flex items-center">
-                <Users className="mr-1 h-4 w-4" /> { } inscritos
+                <Users className="mr-1 h-4 w-4" /> {inscritos} inscritos
               </Badge>
             </div>
-            <Tabs defaultValue="curriculum" >
+            <Tabs defaultValue="curriculum">
               <TabsList className="flex justify-center">
                 <TabsTrigger value="curriculum">Contenido</TabsTrigger>
                 <TabsTrigger value="instructor">Docentes</TabsTrigger>
+                <TabsTrigger value="inscripcion">Inscripción</TabsTrigger>
               </TabsList>
               <TabsContent value="curriculum">
                 <ol className="list-decimal pl-5 space-y-2">
@@ -56,23 +71,21 @@ export default function Curso({ curso }: { curso: TCurso }) {
                   ))
                 }
               </TabsContent>
+              <TabsContent value="inscripcion">
+                <InscripcionForm cursoSlug={curso.slug} cursoTitulo={curso.titulo} />
+              </TabsContent>
             </Tabs>
           </CardContent>
-          <CardFooter>
-            {/* <Button className="w-40 mx-auto p-6">
-              Inscribirse
-            </Button> */}
-          </CardFooter>
+          <CardFooter />
         </Card>
       </div>
       <div className="flex justify-center">
-        <Button variant="ghost" className="mb-4" asChild >
+        <Button variant="ghost" className="mb-4" asChild>
           <a href="/catalogo">
             <LibraryBig className="mr-2 h-4 w-4" /> Ver todos los cursos
           </a>
         </Button>
       </div>
-
     </main>
   )
 }

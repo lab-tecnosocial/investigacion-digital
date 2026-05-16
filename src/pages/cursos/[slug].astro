@@ -6,18 +6,12 @@ import Curso from "@/components/curso/Curso";
 import cursoData from "@/data/cursos.json";
 import type { Curso as TCurso } from "@/data/cursosTypes";
 
-export async function getStaticPaths() {
+export function getStaticPaths() {
   const cursos: TCurso[] = cursoData;
-  return cursos.map((curso) => {
-    return {
-      params: {
-        slug: curso.slug,
-      },
-      props: {
-        curso: curso,
-      },
-    };
-  });
+  return cursos.map((curso) => ({
+    params: { slug: curso.slug },
+    props: { curso },
+  }));
 }
 
 const { curso } = Astro.props as { curso: TCurso };
